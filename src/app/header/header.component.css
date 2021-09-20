@@ -1,0 +1,21 @@
+nav{
+    background-color:blanchedalmond;
+    padding: 10px;
+}
+nav img{
+    width: 70px;
+    
+}
+nav ul{
+    list-style-type: none;
+    float: right
+}
+ul li{
+    display: inline-block;
+}
+li a{
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
