@@ -1,0 +1,26 @@
+<form action="" #basicForm="ngForm" (submit)="getData(basicForm.value)">
+    <div class="container">
+     <div class="form-group">
+         <label for="" >Name</label>
+         <input type="text" name="name" id="" ngModel class="form-control">
+     </div>
+     <div class="form-group">
+         <label for="" >Email</label>
+         <input type="text" name="email" id="" ngModel  class="form-control">
+     </div>
+     <div class="form-group">
+         <label for="" >age</label>
+         <input type="text" name="age" id=""  ngModel class="form-control">
+     </div>
+     <div class="btn">
+         <button class="btn btn-primary">submit</button>
+     </div>
+    </div>
+</form>
+<div>
+    <ul>
+        <li>{{displayData.name}}</li>
+        <li>{{displayData.email}}</li>
+        <li>{{displayData.age}}</li>
+    </ul>
+</div>
