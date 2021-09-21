@@ -12,21 +12,16 @@ export class AppComponent {
 
   user = [
     {
-      name: 'unbaid',
+      name: 'ubaid',
       place: 'pullara',
-      accounts: ['gsd', 'gsd', 'gsd', 'gsd'],
+      accounts: ['LinkedIn', 'facbook', 'whatsapp', 'instagram'],
     },
     {
-      name: 'unbagftwsgid',
-      place: 'pullara',
-      accounts: ['gsd', 'gsd', 'gsd', 'gsd'],
+      name: 'fazil',
+      place: 'kondotty',
+      accounts: ['gmail', 'yahoo', 'whatsapp', 'instagram'],
     },
-    { name: 'dgs', place: 'pullara', accounts: ['gsd', 'car', 'gsd', 'gsd'] },
-    {
-      name: 'fhygadfh',
-      place: 'pullara',
-      accounts: ['gsd', 'gsd', 'gsd', 'gsd'],
-    },
+  
   ];
 
 
