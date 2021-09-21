@@ -1,2 +1,9 @@
-<p>child component</p>
-{{item}}
+<!-- <p>child component</p>
+{{item}} -->
+
+<li>{{user.name}}</li>
+<li>{{user.place}}</li>
+<ul *ngFor="let acc of user.accounts">
+
+    <li>{{acc}}</li>
+</ul>

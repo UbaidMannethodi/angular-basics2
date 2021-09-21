@@ -1,6 +1,6 @@
 <!-- <h1>{{title}}</h1> -->
 
- <!-- if condition  -->
+<!-- if condition  -->
 
 <!-- <h2 *ngIf="show; then ifcondition else elseBlock">
   if conditon
@@ -21,11 +21,8 @@
 <ng-template [ngIf]="color==='blue'">
     <h1 style="color: rgb(0, 255, 136);">blue</h1>
   </ng-template> -->
-  
-  
-  
-  
-  <!-- switchcase -->
+
+<!-- switchcase -->
 <!--   
   <div [ngSwitch]="color">
   <h1 *ngSwitchCase="'blue'" style="color: rgb(0, 255, 136);">blue</h1>
@@ -33,7 +30,6 @@
   <h1 *ngSwitchCase="'blue'" style="color: rgb(0, 255, 136);">blue</h1>
 
 </div> -->
-
 
 <!-- nested loop -->
 <!-- <ul *ngFor="let item of user">
@@ -49,9 +45,13 @@
 
 </ul> -->
 <app-header></app-header>
-<app-child  [item]="childData" ></app-child><br>
-<button (click)="updateData()" class="btn btn-warning">Change Data</button>
 <router-outlet></router-outlet>
 
+<!-- <app-child  [item]="childData" ></app-child><br>  
+<button (click)="updateData()" class="btn btn-warning">Change Data</button> -->
 
-
+<!-- *** looping array elements into chid component -->
+<ul *ngFor="let user of user">
+  <app-child [user]="user"></app-child
+  ><br />
+</ul>

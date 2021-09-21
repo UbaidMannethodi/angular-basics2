@@ -7,9 +7,9 @@ import { Component, OnInit,Input } from '@angular/core';
 })
 export class ChildComponent implements OnInit {
   @Input() item=0; 
+  @Input()  user:{name:string,place:string,accounts:string[]} ={name:'',place:'',accounts:[]};
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }
