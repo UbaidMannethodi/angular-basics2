@@ -10,7 +10,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import { TodoComponent } from './todo/todo.component';
-import { ChildComponent } from './child/child.component' ;
+import { ChildComponent } from './child/child.component';
+import { ChildToParantComponent } from './child-to-parant/child-to-parant.component' ;
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ChildComponent } from './child/child.component' ;
     HeaderComponent,
     BasicFormComponent,
     TodoComponent,
-    ChildComponent
+    ChildComponent,
+    ChildToParantComponent
   ],
   imports: [
     BrowserModule,

@@ -24,13 +24,19 @@ export class AppComponent {
   
   ];
 
+//*** sent Data from parant to Child Componenent
 
-
-//*** for Child Componenent
-  
 childData:number =10;
-    updateData(){
-       this.childData =Math.floor(Math.random()*10);
-    }
+updateData(){
+  this.childData =Math.floor(Math.random()*10);
+}
+
+//*** sent Data from child to parant Componenent
+data: string ="";
+  updateParantData(item:string){
+     console.log(item);
+     this.data = item;
+
+  }
 
 }
