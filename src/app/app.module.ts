@@ -9,14 +9,16 @@ import { BasicFormComponent } from './basic-form/basic-form.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
-import { TodoComponent } from './todo/todo.component' ;
+import { TodoComponent } from './todo/todo.component';
+import { ChildComponent } from './child/child.component' ;
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     BasicFormComponent,
-    TodoComponent
+    TodoComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

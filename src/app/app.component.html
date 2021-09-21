@@ -49,7 +49,9 @@
 
 </ul> -->
 <app-header></app-header>
-<app-basic-form></app-basic-form>
-<app-todo></app-todo>
+<app-child  [item]="childData" ></app-child><br>
+<button (click)="updateData()" class="btn btn-warning">Change Data</button>
+<router-outlet></router-outlet>
+
 
 
