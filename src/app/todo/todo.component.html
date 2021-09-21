@@ -1,0 +1,7 @@
+<div class="container">
+    <input type="tel" name="" id="" #input class="form-control" placeholder="">
+    <button class="btn btn-success m-2" (click)="add(input.value)">Add</button>
+    <ul *ngFor="let item of list">
+        <li>{{item.name}}<button (click)="remove(item.id)" class="btn btn-danger">Remove</button></li>
+    </ul>
+</div>
