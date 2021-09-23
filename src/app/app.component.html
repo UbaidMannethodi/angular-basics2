@@ -45,6 +45,10 @@
 
 </ul> -->
 <app-header></app-header>
+
+<!-- custom pipe -->
+{{30 |usdInr:80}}
+
 <router-outlet></router-outlet>
 
 <!-- <app-child  [item]="childData" ></app-child><br>  
@@ -52,8 +56,7 @@
 
 <!-- *** looping array elements into chid component -->
 <ul *ngFor="let user of user">
-  <app-child [user]="user"></app-child
-  ><br />
+  <app-child [user]="user"></app-child><br />
 </ul>
 
 <P class="bg-danger m-3">child to parant</P>

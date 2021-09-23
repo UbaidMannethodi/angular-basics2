@@ -9,6 +9,7 @@ export class AppComponent {
   // title = 'my-app';
   // show = true;
   // color = 'red';
+  pipe = "hello word and the "
 
   user = [
     {

@@ -11,7 +11,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import { TodoComponent } from './todo/todo.component';
 import { ChildComponent } from './child/child.component';
-import { ChildToParantComponent } from './child-to-parant/child-to-parant.component' ;
+import { ChildToParantComponent } from './child-to-parant/child-to-parant.component';
+import { UsdInrPipe } from './pipes/usd-inr.pipe' ;
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ChildToParantComponent } from './child-to-parant/child-to-parant.compon
     BasicFormComponent,
     TodoComponent,
     ChildComponent,
-    ChildToParantComponent
+    ChildToParantComponent,
+    UsdInrPipe
   ],
   imports: [
     BrowserModule,
