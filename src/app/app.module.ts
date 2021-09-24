@@ -12,7 +12,8 @@ import {MatButtonModule} from '@angular/material/button';
 import { TodoComponent } from './todo/todo.component';
 import { ChildComponent } from './child/child.component';
 import { ChildToParantComponent } from './child-to-parant/child-to-parant.component';
-import { UsdInrPipe } from './pipes/usd-inr.pipe' ;
+import { UsdInrPipe } from './pipes/usd-inr.pipe';
+import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component' ;
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { UsdInrPipe } from './pipes/usd-inr.pipe' ;
     TodoComponent,
     ChildComponent,
     ChildToParantComponent,
-    UsdInrPipe
+    UsdInrPipe,
+    TemplateDrivenFormComponent
   ],
   imports: [
     BrowserModule,

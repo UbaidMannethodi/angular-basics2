@@ -46,10 +46,10 @@
 </ul> -->
 <app-header></app-header>
 
-<!-- custom pipe -->
-{{30 |usdInr:80}}
-
 <router-outlet></router-outlet>
+
+<!-- custom pipe -->
+<p class="bg-secondary">{{30 |usdInr:80}}</p>
 
 <!-- <app-child  [item]="childData" ></app-child><br>  
 <button (click)="updateData()" class="btn btn-warning">Change Data</button> -->
