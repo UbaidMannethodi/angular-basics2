@@ -2,12 +2,14 @@
     <form action="" #loginForm="ngForm" (ngSubmit)="loginUser(loginForm.value)">
     <div class="form-group">
         <label for="">Name</label>
-        <input type="text" name="username" id="" class="form-control" ngModel>
+        <input type="text" required #name="ngModel"  name="username" id="" class="form-control" pattern="[a-zA-Z]+$" ngModel [ngClass]="{'is-invalid': name.invalid && name.touched}">
+        <span class="text text-danger" *ngIf="name.invalid && name.touched">Please Enter Valid username</span>
     </div>
     <div class="form-group">
         <label for="">Password</label>
-        <input type="password" name="password" id="" class="form-control" ngModel>
+        <input type="password" name="password" required #password="ngModel" id="" class="form-control" minlength="2" ngModel [ngClass]="{'is-invalid': password.invalid && password.touched}">
+        <span class="text text-danger" *ngIf="password.invalid && password.touched">Please Enter Your Password</span>
     </div>
-    <button class="btn btn-primary mb-3">Login</button>
+    <button class="btn btn-primary mb-3" [disabled]="loginForm.invalid">Login</button>
 </form>
-</div>
+
