@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { BasicFormComponent } from './basic-form/basic-form.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -13,7 +13,8 @@ import { TodoComponent } from './todo/todo.component';
 import { ChildComponent } from './child/child.component';
 import { ChildToParantComponent } from './child-to-parant/child-to-parant.component';
 import { UsdInrPipe } from './pipes/usd-inr.pipe';
-import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component' ;
+import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component' ;
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { TemplateDrivenFormComponent } from './template-driven-form/template-dri
     ChildComponent,
     ChildToParantComponent,
     UsdInrPipe,
-    TemplateDrivenFormComponent
+    TemplateDrivenFormComponent,
+    ReactiveFormComponent
   ],
   imports: [
     BrowserModule,

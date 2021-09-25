@@ -7,7 +7,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./template-driven-form.component.css']
 })
 export class TemplateDrivenFormComponent implements OnInit {
-
+  data:any=[];
   constructor() { }
 
   ngOnInit(): void {
@@ -15,6 +15,7 @@ export class TemplateDrivenFormComponent implements OnInit {
 
   loginUser(value:NgForm){
       console.log(value);
+      this.data=value;
       
   
   }
