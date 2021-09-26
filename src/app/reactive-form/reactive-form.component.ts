@@ -12,11 +12,13 @@ export class ReactiveFormComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  loginForm= new FormGroup({
+  loginForm = new FormGroup({
        username:new FormControl(''),
-       password:new FormControl('')
-  });
+       password:new FormControl(''),
+  })
   loginUser(){
-    
+     console.warn(this.loginForm.value);
+     
   }
+
 }
