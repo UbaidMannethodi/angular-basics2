@@ -16,7 +16,10 @@ import { UsdInrPipe } from './pipes/usd-inr.pipe';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { RedElDirective } from './red-el.directive';
-import { NoPageComponent } from './no-page/no-page.component' ;
+import { NoPageComponent } from './no-page/no-page.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { AboutCompanyComponent } from './about-company/about-company.component';
+import { AboutComponent } from './about/about.component' ;
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { NoPageComponent } from './no-page/no-page.component' ;
     TemplateDrivenFormComponent,
     ReactiveFormComponent,
     RedElDirective,
-    NoPageComponent
+    NoPageComponent,
+    AboutMeComponent,
+    AboutCompanyComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
