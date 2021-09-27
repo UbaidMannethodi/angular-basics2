@@ -15,7 +15,8 @@ import { ChildToParantComponent } from './child-to-parant/child-to-parant.compon
 import { UsdInrPipe } from './pipes/usd-inr.pipe';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
-import { RedElDirective } from './red-el.directive' ;
+import { RedElDirective } from './red-el.directive';
+import { NoPageComponent } from './no-page/no-page.component' ;
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { RedElDirective } from './red-el.directive' ;
     UsdInrPipe,
     TemplateDrivenFormComponent,
     ReactiveFormComponent,
-    RedElDirective
+    RedElDirective,
+    NoPageComponent
   ],
   imports: [
     BrowserModule,
