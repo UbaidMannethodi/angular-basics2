@@ -4,12 +4,14 @@
     <div class="form-group">
         <label for="">Name</label>
         <input type="text"  name="username" id="" class="form-control" formControlName="username">
-        <span class="text text-danger">Please Enter Valid username</span>
-    </div>
+        <span class="text text-danger" *ngIf="user && user.invalid && user.touched">Please Enter Valid username</span>
+        </div>
+
     <div class="form-group">
         <label for="">Password</label>
         <input type="password" name="password"  id="" class="form-control" formControlName="password">
-        <!-- <span class="text text-danger">Please Enter Your Password</span> -->
+        <span class="text text-danger" *ngIf="pass && pass.invalid && pass.touched">Please Enter Your Password</span>
     </div>
-    <button class="btn btn-primary mb-3" >Login</button>
+    <button class="btn btn-primary mb-3" [disabled]="loginForm.invalid" [ngClass]="{'btn-danger' : loginForm.invalid} " >Login</button>
 </form>
+</div>
