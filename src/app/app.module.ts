@@ -34,7 +34,8 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component' 
     FormsModule,
     NgbModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

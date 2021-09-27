@@ -17,6 +17,6 @@ export class ReactiveFormComponent implements OnInit {
        password:new FormControl('')
   });
   loginUser(){
-    
+
   }
 }
