@@ -1,13 +1,15 @@
 <nav>
   <img src="https://cyboss.in/wp-content/uploads/2020/07/CyBoss.png" alt="" />
   <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#"  [routerLink]="['/about']" >About</a></li>
-    <li><a href="#" appRedEl  [routerLink]="['/todo']" >Todo</a></li>
-    <li><a href="#"  [routerLink]="['/basic-form']" >Basic Form</a></li>
-    <li><a href="#"  [routerLink]="['/child']" >Child comp</a></li>
-    <li><a href="#"  [routerLink]="['/template-driven-form']" >template-driven-form</a></li>
-    <li><a href="#"  [routerLink]="['/reactive-form']" >reactive-form</a></li>
-
+    <li><a>Home</a></li>
+    <li><a [routerLink]="['/about']">About</a></li>
+    <li><a appRedEl [routerLink]="['/todo']">Todo</a></li>
+    <li><a [routerLink]="['/user-api']">Get API</a></li>
+    <li><a [routerLink]="['/basic-form']">Basic Form</a></li>
+    <li><a [routerLink]="['/child']">Child comp</a></li>
+    <li>
+      <a [routerLink]="['/template-driven-form']">template-driven-form</a>
+    </li>
+    <li><a [routerLink]="['/reactive-form']">reactive-form</a></li>
   </ul>
 </nav>

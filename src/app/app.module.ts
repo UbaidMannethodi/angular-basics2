@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -21,6 +20,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { AboutCompanyComponent } from './about-company/about-company.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component' ;
+import { HttpClientModule } from '@angular/common/http';
+import { UserApiComponent } from './user-api/user-api.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { FooterComponent } from './footer/footer.component' ;
     AboutMeComponent,
     AboutCompanyComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    UserApiComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +49,8 @@ import { FooterComponent } from './footer/footer.component' ;
     NgbModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

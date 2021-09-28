@@ -9,6 +9,7 @@ import { NoPageComponent } from './no-page/no-page.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 import { TodoComponent } from './todo/todo.component';
+import { UserApiComponent } from './user-api/user-api.component';
 
 const routes: Routes = [
   { path: 'child', component: ChildComponent },
@@ -25,8 +26,10 @@ const routes: Routes = [
 
     ]
   },
-    // 404 component
-    { path: '**', component: NoPageComponent },
+  { path: 'user-api', component: UserApiComponent },
+  // 404 component
+  { path: '**', component: NoPageComponent },
+
 ];
 
 @NgModule({
