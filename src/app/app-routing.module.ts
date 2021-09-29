@@ -10,8 +10,6 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 import { TodoComponent } from './todo/todo.component';
 import { UserApiComponent } from './user-api/user-api.component';
-import { ListComponent } from './user-module/list/list.component';
-import { LoginComponent } from './user-module/login/login.component';
 
 const routes: Routes = [
   { path: 'child', component: ChildComponent },
@@ -29,8 +27,6 @@ const routes: Routes = [
     ]
   },
   { path: 'user-api', component: UserApiComponent },
-  { path: 'list', component: ListComponent },
-  { path: 'login', component: LoginComponent },
   // 404 component
   { path: '**', component: NoPageComponent },
 

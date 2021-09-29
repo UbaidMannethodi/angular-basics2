@@ -22,7 +22,6 @@ import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component' ;
 import { HttpClientModule } from '@angular/common/http';
 import { UserApiComponent } from './user-api/user-api.component';
-import { UserModuleModule } from './user-module/user-module.module';
 
 @NgModule({
   declarations: [
@@ -52,7 +51,6 @@ import { UserModuleModule } from './user-module/user-module.module';
     MatButtonModule,
     ReactiveFormsModule,
     HttpClientModule,
-    UserModuleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
