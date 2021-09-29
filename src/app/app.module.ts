@@ -22,6 +22,7 @@ import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component' ;
 import { HttpClientModule } from '@angular/common/http';
 import { UserApiComponent } from './user-api/user-api.component';
+import { AdminModule } from './admin/admin.module';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { UserApiComponent } from './user-api/user-api.component';
     MatButtonModule,
     ReactiveFormsModule,
     HttpClientModule,
+    AdminModule
   ],
   providers: [],
   bootstrap: [AppComponent]

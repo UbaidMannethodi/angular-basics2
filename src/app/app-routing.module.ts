@@ -28,7 +28,7 @@ const routes: Routes = [
   },
   { path: 'user-api', component: UserApiComponent },
   // 404 component
-  { path: '**', component: NoPageComponent },
+  // { path: '**', component: NoPageComponent },
 
 ];
 

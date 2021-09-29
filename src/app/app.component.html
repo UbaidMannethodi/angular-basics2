@@ -49,17 +49,20 @@
 <router-outlet></router-outlet>
 
 <!-- custom pipe -->
-<p class="bg-secondary">{{30 |usdInr:80}}</p>
+<p class="bg-secondary">{{ 30 | usdInr: 80 }}</p>
 
 <!-- <app-child  [item]="childData" ></app-child><br>  
 <button (click)="updateData()" class="btn btn-warning">Change Data</button> -->
 
 <!-- *** looping array elements into chid component -->
 <ul *ngFor="let user of user">
-  <app-child [user]="user"></app-child><br />
+  <app-child [user]="user"></app-child
+  ><br />
 </ul>
 
 <P class="bg-danger m-3">child to parant</P>
-<p>{{data}}</p>
-<app-child-to-parant (updateDataEvent)="updateParantData($event)" ></app-child-to-parant>
+<p>{{ data }}</p>
+<app-child-to-parant
+  (updateDataEvent)="updateParantData($event)"
+></app-child-to-parant>
 <app-footer></app-footer>
