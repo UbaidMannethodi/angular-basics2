@@ -15,6 +15,9 @@ export class UserApiComponent implements OnInit {
       //  console.log(data);
        this.users=data;
      });
+
+
+    
   }
   
 
