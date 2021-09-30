@@ -29,6 +29,8 @@ const routes: Routes = [
   },
   { path: 'user-api', component: UserApiComponent },
   { path: 'group-routing', component: GrouproutingpageComponent },
+  // lazy loading
+  {path: 'lazy-loading',loadChildren:()=>import('./lazy/lazy.module').then(mod=>mod.LazyModule)}
   // 404 component
   // { path: '**', component: NoPageComponent },
 
