@@ -23,6 +23,8 @@ import { FooterComponent } from './footer/footer.component' ;
 import { HttpClientModule } from '@angular/common/http';
 import { UserApiComponent } from './user-api/user-api.component';
 import { AdminModule } from './admin/admin.module';
+import { UserModule } from './user/user.module';
+import { GrouproutingpageComponent } from './grouproutingpage/grouproutingpage.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,8 @@ import { AdminModule } from './admin/admin.module';
     AboutCompanyComponent,
     AboutComponent,
     FooterComponent,
-    UserApiComponent
+    UserApiComponent,
+    GrouproutingpageComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +55,8 @@ import { AdminModule } from './admin/admin.module';
     MatButtonModule,
     ReactiveFormsModule,
     HttpClientModule,
-    AdminModule
+    AdminModule,
+    UserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

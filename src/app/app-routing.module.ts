@@ -5,6 +5,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { AboutComponent } from './about/about.component';
 import { BasicFormComponent } from './basic-form/basic-form.component';
 import { ChildComponent } from './child/child.component';
+import { GrouproutingpageComponent } from './grouproutingpage/grouproutingpage.component';
 import { NoPageComponent } from './no-page/no-page.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
@@ -27,6 +28,7 @@ const routes: Routes = [
     ]
   },
   { path: 'user-api', component: UserApiComponent },
+  { path: 'group-routing', component: GrouproutingpageComponent },
   // 404 component
   // { path: '**', component: NoPageComponent },
 
